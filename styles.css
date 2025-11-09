@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+    color:hsl(14, 45%, 36%);
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.4;
+    display:grid;
+    place-content: center;
+
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+h1,h2{
+    font-family: "Young Serif", sans-serif;
+    font-weight: 400;
+}
+h1{
+    color:hsl(24, 5%, 18%);
+    font-size: 32px;
+}
+h2{
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 16px;
+
+}
+.step{
+    margin:16px 0;
+}
+.nutrition{
+    margin-top: 16px;
+}
+ul{
+    padding-left: 24px;
+}
+ul li::marker{
+    color:hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+ul li{
+    margin-bottom: 8px;
+}
+ul li span{
+    color:hsl(30, 10%, 34%);
+    margin-left:16px;
+    font-weight: 700;
+}
+hr{
+    margin:24px 0;
+    border:1px solid hsl(30, 10%, 34%);
+}
+.card{
+    max-width:800px;
+    background-color: #fff;
+    margin:32px;
+    border-radius: 16px;
+}
+.card .img{
+     border-radius: 16px;
+     padding:32px;
+     overflow: hidden;
+
+}
+.img img{
+    border-radius: 16px;
+}
+.info{
+    padding: 0px 32px 32px 32px;
+}
+.description{
+    margin:24px 0;
+}
+.prep-time{
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+    border-radius: 16px;
+}
+.prep-time h3{
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 12px;
+}
+.prep-time ul li::marker{
+    color: hsl(332, 51%, 32%);
+}
+.ingredients li{
+    margin-bottom: 8px;
+}
+.ingredients li span{
+    font-weight: initial;
+}
+.instructions .item{
+      margin-bottom: 8px;
+    padding-left: 8px;
+    display: flex;
+}
+.instructions .item .num{
+    color:hsl(14, 45%, 36%);
+    margin-right: 16px;
+    font-weight: 700;
+}
+.instructions .item p span{
+    font-weight: 700;
+}
+.nutrition .values{
+    margin-bottom: 16px;
+    
+}
+.table .item{
+    padding:12px 32px;
+    display:flex;
+    border-bottom: 1px solid hsl(30, 10%, 34%);
+}
+.table .item:last-child{
+    border-bottom: 0;
+}
+.table .item p:nth-child(2){
+   color: hsl(14, 45%, 36%);
+   font-weight: 700;
+}
+.table .item > *{
+    width:100px;
+    margin-right:auto;
+}
+@media (max-width:540px) {
+    h1{
+        margin-top: 32px;
+    }
+    .card{
+        margin:0;
+    }
+    .card .img{
+        padding: 0;
+        border-radius: 0;
+    }
+    .card .img img{
+        border-radius: 0;
+    }
+
+    
+}
